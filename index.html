@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACS26 New Zealand — Speaker Guide</title>
+<meta name="description" content="Everything ACS26 speakers need: session formats, schedule, travel, promotion, and to-dos. Hamilton, New Zealand — October 6–7, 2026. With city-host Gallagher Security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0A0A;
+  --ink:#141414;
+  --panel:#161616;
+  --line:rgba(255,255,255,.12);
+  --white:#FFFFFF;
+  --grey:#9B9B9B;
+  --green:#C5F135;
+  --max:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(10,10,10,.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;padding:0 32px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:72px;
+}
+.nav-left{display:flex;align-items:center;gap:16px}
+.nav-wordmark{font-weight:900;font-size:22px;letter-spacing:-.02em}
+.nav-wordmark sup{color:var(--green);font-size:11px;top:-8px;position:relative}
+.nav-divider{width:1px;height:24px;background:var(--line)}
+.nav-tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);font-weight:500}
+.nav-right{display:flex;align-items:center;gap:28px}
+.nav-right a{font-size:13px;font-weight:500;color:var(--grey);padding:8px 0;transition:color .2s}
+.nav-right a:hover,.nav-right a:focus-visible{color:var(--white)}
+.nav-cta{
+  background:var(--green);color:var(--black) !important;
+  font-weight:700;padding:12px 22px !important;border-radius:100px;
+  transition:transform .15s ease;
+}
+.nav-cta:hover{transform:translateY(-1px)}
+a:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:2px}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  padding:120px 0 96px;
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 900px 480px at 85% -10%, rgba(197,241,53,.14), transparent 60%),
+    radial-gradient(ellipse 700px 400px at 0% 110%, rgba(197,241,53,.05), transparent 60%);
+  pointer-events:none;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--green);margin-bottom:28px;
+}
+.hero-eyebrow::before{content:"";width:32px;height:2px;background:var(--green)}
+h1{
+  font-size:clamp(52px,9vw,120px);
+  font-weight:900;line-height:.94;letter-spacing:-.03em;
+  text-transform:uppercase;
+}
+h1 .thin{color:transparent;-webkit-text-stroke:1.5px var(--white)}
+.hero-sub{
+  margin-top:32px;max-width:620px;
+  font-size:18px;color:var(--grey);
+}
+.hero-sub strong{color:var(--white);font-weight:700}
+.hero-meta{
+  margin-top:56px;display:flex;flex-wrap:wrap;gap:40px;
+}
+.hero-meta div{
+  flex:1;min-width:190px;
+}
+.hero-meta .k{font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:900;margin-bottom:8px}
+.hero-meta .v{font-size:16px;font-weight:500;color:#E8E8E8}
+
+/* ---------- MOMENT ---------- */
+.moment p{font-size:19px;line-height:1.7;color:var(--grey);max-width:820px}
+.moment p strong{color:var(--white)}
+.moment p + p{margin-top:20px}
+.themes{
+  margin-top:44px;display:flex;flex-wrap:wrap;gap:10px;
+}
+.theme-chip{
+  border:1px solid rgba(197,241,53,.5);border-radius:100px;
+  padding:10px 20px;font-size:14px;font-weight:700;letter-spacing:.01em;
+}
+.moment-stats{
+  margin-top:44px;display:flex;gap:48px;flex-wrap:wrap;
+}
+.moment-stats .stat .n{font-size:44px;font-weight:900;letter-spacing:-.02em;color:var(--green);line-height:1}
+.moment-stats .stat .l{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);font-weight:500;margin-top:6px}
+
+/* ---------- SECTIONS ---------- */
+section{padding:96px 0;border-bottom:1px solid var(--line)}
+.sec-head{margin-bottom:56px}
+h2{
+  font-size:clamp(34px,5vw,56px);
+  font-weight:900;letter-spacing:-.02em;line-height:1;
+  text-transform:uppercase;
+}
+.sec-note{
+  margin-top:18px;
+  font-size:20px;font-weight:500;line-height:1.5;
+  color:#D6D6D6;max-width:760px;
+}
+
+/* format cards */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:28px;transition:border-color .2s;
+}
+.card:hover{border-color:rgba(197,241,53,.45)}
+.card .badge{
+  display:inline-block;background:var(--green);color:var(--black);
+  font-size:12px;font-weight:700;letter-spacing:.04em;
+  padding:5px 12px;border-radius:100px;margin-bottom:18px;
+}
+.card h3{font-size:19px;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
+.card p{font-size:14px;color:var(--grey)}
+.prep{
+  margin-top:16px;
+  border:1px dashed rgba(197,241,53,.5);border-radius:14px;
+  padding:28px;
+}
+.prep h3{font-size:17px;font-weight:700;margin-bottom:6px}
+.prep > p{font-size:14.5px;color:var(--grey)}
+.prep ul{list-style:none;margin-top:18px}
+.prep li{
+  padding:12px 0;border-top:1px solid var(--line);
+  font-size:14.5px;color:var(--grey);
+  display:flex;gap:14px;align-items:baseline;
+}
+.prep li .fmt{
+  flex-shrink:0;min-width:96px;
+  font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--green);
+}
+
+/* ---------- SCHEDULE ---------- */
+.day{
+  display:grid;grid-template-columns:220px 1fr;gap:32px;
+  padding:36px 0;border-top:1px solid var(--line);
+}
+.day:last-of-type{border-bottom:1px solid var(--line)}
+.day-date .dow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:6px}
+.day-date .dt{font-size:26px;font-weight:900;letter-spacing:-.02em;line-height:1.1}
+.day-date .opt{
+  display:inline-block;margin-top:10px;
+  font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--grey);border:1px solid var(--line);
+  padding:3px 10px;border-radius:100px;
+}
+.day-body h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.day-body p{font-size:14.5px;color:var(--grey);max-width:640px}
+.day-body .pin{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:14px;font-size:13px;font-weight:500;color:var(--white);
+  background:var(--ink);border:1px solid var(--line);
+  padding:8px 14px;border-radius:100px;
+}
+.day-body .pin::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green)}
+.prompt-callout{
+  margin-top:32px;background:var(--green);color:var(--black);
+  border-radius:14px;padding:24px 28px;
+  font-size:15px;font-weight:500;
+  display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap;
+}
+.prompt-callout strong{font-weight:900}
+.agenda-link{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:28px;font-size:14px;font-weight:700;color:var(--green);
+}
+.agenda-link:hover{text-decoration:underline}
+
+/* ---------- TRAVEL ROWS ---------- */
+.trav-row{
+  display:grid;grid-template-columns:260px 1fr;gap:32px;
+  padding:34px 28px;margin:0 -28px;border-radius:14px;
+  border-top:1px solid var(--line);align-items:start;
+  transition:transform .25s ease,background .25s ease,box-shadow .25s ease;
+}
+.trav-row:last-of-type{border-bottom:1px solid var(--line)}
+.trav-row h3{
+  font-size:14px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);font-weight:700;padding-top:2px;
+  transition:color .25s ease,font-size .25s ease;
+}
+.trav-row p{font-size:15.5px;color:#C9C9C9;max-width:680px;line-height:1.65;transition:font-size .25s ease,color .25s ease}
+.trav-row:hover,.trav-row:focus-within{
+  transform:scale(1.02);
+  background:var(--panel);
+  box-shadow:0 12px 40px rgba(0,0,0,.5);
+  position:relative;z-index:2;
+}
+.trav-row:hover h3,.trav-row:focus-within h3{color:var(--white);font-size:15px}
+.trav-row:hover p,.trav-row:focus-within p{font-size:17px;color:#E8E8E8}
+.trav-row:hover .hd,.trav-row:focus-within .hd{font-size:15px}
+@media (prefers-reduced-motion:reduce){
+  .trav-row,.trav-row h3,.trav-row p{transition:none}
+  .trav-row:hover,.trav-row:focus-within{transform:none}
+}
+.trav-row p + p{margin-top:12px}
+.trav-row p strong{color:var(--white)}
+.trav-row a.inline{color:var(--green);font-weight:700}
+.trav-row a.inline:hover{text-decoration:underline}
+.hotel{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  background:var(--ink);border:1px solid var(--line);border-radius:12px;
+  padding:18px 22px;margin-top:14px;max-width:680px;
+}
+.hotel .hn{font-weight:700;font-size:15.5px}
+.hotel .hd{font-size:13.5px;color:var(--grey);transition:font-size .25s ease}
+
+/* ---------- LOGISTICS ---------- */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.log-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
+.log-card h3{
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green);font-weight:700;margin-bottom:18px;
+}
+.log-card ul{list-style:none}
+.log-card li{
+  padding:12px 0;border-top:1px solid var(--line);
+  font-size:14.5px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.log-card li:first-child{border-top:none;padding-top:0}
+.log-card li .l{font-weight:700}
+.log-card li .r{color:var(--grey)}
+.log-card p{font-size:14.5px;color:var(--grey)}
+.log-card p + p{margin-top:12px}
+.log-card p strong{color:var(--white)}
+.hotel-tag{
+  display:inline-block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--green);color:var(--black);
+  padding:3px 10px;border-radius:100px;margin-left:8px;vertical-align:middle;
+}
+.hotel-tag.alt{background:transparent;color:var(--green);border:1px solid rgba(197,241,53,.5)}
+.tbd{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;
+  color:var(--green);border:1px solid rgba(197,241,53,.5);
+  padding:2px 8px;border-radius:100px;vertical-align:middle;
+}
+
+/* ---------- PROMOTION ---------- */
+.promo-list{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.promo{
+  padding:32px;border-bottom:1px solid var(--line);
+  background:var(--panel);
+}
+.promo:nth-child(odd){border-right:1px solid var(--line)}
+.promo:nth-last-child(-n+2){border-bottom:none}
+.promo h3{font-size:17px;font-weight:700;margin-bottom:8px;display:flex;gap:10px;align-items:center}
+.promo h3::before{content:"";width:8px;height:8px;background:var(--green);flex-shrink:0}
+.promo p{font-size:14px;color:var(--grey)}
+
+/* ---------- TODO ---------- */
+.todo{counter-reset:todo}
+.todo-item{
+  counter-increment:todo;
+  display:grid;grid-template-columns:80px 1fr;gap:28px;
+  padding:30px 0;border-top:1px solid var(--line);align-items:start;
+}
+.todo-item:last-child{border-bottom:1px solid var(--line)}
+.todo-item::before{
+  content:"0" counter(todo);
+  font-size:38px;font-weight:900;letter-spacing:-.02em;
+  color:transparent;-webkit-text-stroke:1.2px var(--green);
+  line-height:1;
+}
+.todo-item h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.todo-item p{font-size:14.5px;color:var(--grey);max-width:620px}
+.todo-item a{color:var(--green);font-weight:700}
+.todo-item a:hover{text-decoration:underline}
+.code-chip{
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;
+  background:var(--ink);border:1px solid var(--line);
+  padding:3px 10px;border-radius:6px;font-size:13.5px;color:var(--green);
+  letter-spacing:.06em;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact{
+  background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:32px;
+}
+.contact .name{font-size:22px;font-weight:900;letter-spacing:-.01em;margin-bottom:4px}
+.contact .role{font-size:13px;color:var(--grey);margin-bottom:20px}
+.contact a{
+  display:block;font-size:15px;font-weight:500;padding:10px 0;
+  border-top:1px solid var(--line);transition:color .2s;
+}
+.contact a:hover{color:var(--green)}
+.contact a span{color:var(--grey);font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:2px}
+
+/* ---------- FOOTER ---------- */
+footer{padding:56px 0}
+.foot{
+  display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+  color:var(--grey);font-size:13px;
+}
+.foot .tag{color:var(--green);font-weight:700}
+
+/* ---------- MOTION ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:960px){
+  .grid-3{grid-template-columns:1fr}
+  .grid-2,.contact-grid,.promo-list{grid-template-columns:1fr}
+  .promo:nth-child(odd){border-right:none}
+  .promo{border-bottom:1px solid var(--line)}
+  .promo:last-child{border-bottom:none}
+  .day{grid-template-columns:1fr;gap:12px}
+  .trav-row{grid-template-columns:1fr;gap:10px}
+  .trav-row{padding:34px 16px;margin:0 -16px}
+  .nav-tag{display:none}
+}
+@media (max-width:600px){
+  .wrap{padding:0 20px}
+  .nav-inner{padding:0 20px}
+  .nav-right a:not(.nav-cta){display:none}
+  section{padding:64px 0}
+  .hero{padding:80px 0 64px}
+  .todo-item{grid-template-columns:56px 1fr;gap:16px}
+  .todo-item::before{font-size:28px}
+  .moment-stats{gap:28px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="nav-wordmark" href="#top">ACS<sup>26</sup></a>
+      <div class="nav-divider"></div>
+      <span class="nav-tag">Speaker Guide · New Zealand</span>
+    </div>
+    <div class="nav-right">
+      <a href="#format">Session Types</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#travel">Getting There</a>
+      <a href="#promotion">Promotion</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#todo">Before ACS26</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-eyebrow">Welcome, Speaker</div>
+    <h1>You're on<br>the <span class="thin">ACS26</span><br>stage.</h1>
+    <p class="hero-sub">Everything you need for <strong>ACS26 New Zealand</strong> lives on this page — your session format, the schedule, travel and entry requirements, and the short list of things we need from you before October.</p>
+    <div class="hero-meta reveal">
+      <div><div class="k">Main Event</div><div class="v">October 6–7, 2026</div></div>
+      <div><div class="k">Location</div><div class="v">Hamilton, New Zealand</div></div>
+      <div><div class="k">City Host</div><div class="v">Gallagher Security</div></div>
+      <div><div class="k">Format</div><div class="v">No slides · Candid</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="moment" id="moment">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Our Moment</h2>
+      <p class="sec-note">With city-host Gallagher Security</p>
+    </div>
+    <div class="reveal">
+      <p>The Access Control Summit is where the global access control industry comes together — not for another conference, but for a <strong>focused, high-trust room</strong> of operators, executives, innovators, and builders shaping what's next.</p>
+      <p>This is our moment. The industry is moving fast — from doors to identity, from hardware to platforms, from legacy businesses to reinvention, from steady growth to capital-driven strategy shifts. ACS exists to meet that moment head-on.</p>
+      <p>Now in its fourth year — after Washington, DC; Zurich with Google; and San Sebastián with SALTO — ACS heads to <strong>New Zealand</strong>, hosted in collaboration with Gallagher Security. It's one of those destinations that makes the trip worth it: world-class scenery, incredible food and wine, and the kind of place people dream about visiting for years.</p>
+    </div>
+    <div class="themes reveal">
+      <span class="theme-chip">From Doors to Identity</span>
+      <span class="theme-chip">Capital Shapes Strategy</span>
+      <span class="theme-chip">Legacy Meets Reinvention</span>
+      <span class="theme-chip">People Build Platforms</span>
+    </div>
+    <div class="moment-stats reveal">
+      <div class="stat"><div class="n">4</div><div class="l">Themes</div></div>
+      <div class="stat"><div class="n">40+</div><div class="l">Speakers</div></div>
+      <div class="stat"><div class="n">4th</div><div class="l">Year of ACS</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="format">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Session Types</h2>
+      <p class="sec-note">Every speaker has one session, in one of three formats.</p>
+    </div>
+    <div class="grid-3 reveal">
+      <div class="card">
+        <span class="badge">10 min</span>
+        <h3>My View</h3>
+        <p>A solo talk — your view, your voice. No slides, just you and the room.</p>
+      </div>
+      <div class="card">
+        <span class="badge">15 min</span>
+        <h3>1:1</h3>
+        <p>A fireside-style conversation with Lee. Casual, candid, unscripted.</p>
+      </div>
+      <div class="card">
+        <span class="badge">25 min</span>
+        <h3>Panel</h3>
+        <p>A moderated discussion with up to four speakers, built around a shared theme.</p>
+      </div>
+    </div>
+    <div class="prep reveal">
+      <h3>No formal prep calls</h3>
+      <p>The best conversations at ACS happen when they're candid, not rehearsed. Here's what to expect instead:</p>
+      <ul>
+        <li><span class="fmt">Panel</span><span>You'll be introduced to your fellow panelists by email ahead of time.</span></li>
+        <li><span class="fmt">Panel / 1:1</span><span>You'll receive a sense of the questions that will be asked — enough to feel prepared, not scripted.</span></li>
+        <li><span class="fmt">My View</span><span>We'll work directly with you to shape your topic.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Event Schedule</h2>
+      <p class="sec-note">The core ACS26 event runs Tuesday and Wednesday in Hamilton, with optional hosted activities in Auckland on either side.</p>
+    </div>
+
+    <div class="day reveal">
+      <div class="day-date">
+        <div class="dow">Monday</div>
+        <div class="dt">Oct 5</div>
+        <span class="opt">Optional</span>
+      </div>
+      <div class="day-body">
+        <h3>Hosted Activities — Auckland</h3>
+        <p>If your travel allows, join us for optional hosted activities in Auckland the day before the event — a great way to make the most of the trip. More details to come soon. The hosted coach transfer from Auckland to Hamilton runs today.</p>
+        <span class="pin">Hosted coach transfer · Auckland → Hamilton</span>
+      </div>
+    </div>
+
+    <div class="day reveal">
+      <div class="day-date">
+        <div class="dow">Tuesday</div>
+        <div class="dt">Oct 6</div>
+      </div>
+      <div class="day-body">
+        <h3>Welcome Reception</h3>
+        <p>ACS26 opens with a welcome reception at the home of Sir William and Lady Judi Gallagher — the best moment to meet the room before you're on stage.</p>
+        <span class="pin">Home of Sir William &amp; Lady Judi Gallagher</span>
+      </div>
+    </div>
+
+    <div class="day reveal">
+      <div class="day-date">
+        <div class="dow">Wednesday</div>
+        <div class="dt">Oct 7</div>
+      </div>
+      <div class="day-body">
+        <h3>Main Event Day — BNZ Theatre</h3>
+        <p>The event begins at 8:00 am. Please be on time for your session — we run a tight schedule, so your promptness is appreciated. The program wraps at 5:00 pm, but drinks will be served afterward. Please feel free to stay and join us. Breakfast, lunch, and drinks are provided throughout the day.</p>
+        <span class="pin">8:00 am – 5:00 pm · Drinks follow</span>
+      </div>
+    </div>
+
+    <div class="day reveal">
+      <div class="day-date">
+        <div class="dow">Thursday</div>
+        <div class="dt">Oct 8</div>
+        <span class="opt">Optional</span>
+      </div>
+      <div class="day-body">
+        <h3>Hosted Activities — Auckland</h3>
+        <p>The hosted coach returns from Hamilton to Auckland, with optional hosted activities in Auckland for those staying on. More details to come soon.</p>
+        <span class="pin">Hosted coach transfer · Hamilton → Auckland</span>
+      </div>
+    </div>
+
+    <a class="agenda-link reveal" href="https://acs26.tacc.me/#agenda" target="_blank" rel="noopener">See the full agenda →</a>
+  </div>
+</section>
+
+<section id="travel">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Getting There<br>&amp; Staying</h2>
+      <p class="sec-note">Flights, entry requirements, hotels, and what to pack.</p>
+    </div>
+    <div class="trav-row reveal">
+      <h3>Flying In</h3>
+      <div>
+        <p>Most international flights land in <strong>Auckland</strong>. If you're joining the optional Monday or Thursday activities, plan to fly into Auckland and take the hosted coach from there.</p>
+      </div>
+    </div>
+    <div class="trav-row reveal">
+      <h3>Coach Transfer</h3>
+      <div>
+        <p>We've got you covered — hosted coach transfer is provided from <strong>Auckland to Hamilton on Monday, October 5</strong>, and back to <strong>Auckland on Thursday, October 8</strong>. No need to rent a car.</p>
+      </div>
+    </div>
+    <div class="trav-row reveal">
+      <h3>Entry Requirements</h3>
+      <div>
+        <p>Most visa-waiver-country travelers will need a <strong>New Zealand Electronic Travel Authority (NZeTA)</strong>, applied for online before departure. Even if your country doesn't require a visa, the NZeTA is still required — worth applying early.</p>
+        <p><a class="inline" href="https://www.immigration.govt.nz/new-zealand-visas/visas/visa/nzeta" target="_blank" rel="noopener">Apply for your NZeTA →</a></p>
+      </div>
+    </div>
+    <div class="trav-row reveal">
+      <h3>Where to Stay</h3>
+      <div>
+        <p>For the event itself, <strong>Hamilton is the way to go</strong> — it puts you right in the middle of everything, just a short walk from BNZ Theatre.</p>
+        <div class="hotel">
+          <div><span class="hn">Novotel Hamilton Tainui</span><span class="hotel-tag">Primary</span></div>
+          <div class="hd">7 Alma Street · 6-min walk to BNZ Theatre</div>
+        </div>
+        <div class="hotel">
+          <div><span class="hn">Ibis Hamilton Tainui</span><span class="hotel-tag alt">Secondary</span></div>
+          <div class="hd">Also centrally located</div>
+        </div>
+        <p style="margin-top:16px">Joining the optional Monday or Thursday activities? Stay in Auckland for those nights instead — hosted coach transfers run between the two cities either way.</p>
+      </div>
+    </div>
+    <div class="trav-row reveal">
+      <h3>Season &amp; Currency</h3>
+      <div>
+        <p>October is New Zealand <strong>spring</strong> — mild but variable, so pack layers. Currency is the New Zealand Dollar (NZD).</p>
+      </div>
+    </div>
+    <div class="trav-row reveal">
+      <h3>Dress Code</h3>
+      <div>
+        <p>No formal dress code — wear what is comfortable and appropriate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="promotion">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>We Promote You</h2>
+      <p class="sec-note">Every ACS26 session is professionally recorded — and keeps working for you after the event.</p>
+    </div>
+    <div class="promo-list reveal">
+      <div class="promo">
+        <h3>Edited video, yours to share</h3>
+        <p>You'll receive edited video content of your session for personal use.</p>
+      </div>
+      <div class="promo">
+        <h3>Social media promotion</h3>
+        <p>Comprehensive promotion of your session across social media.</p>
+      </div>
+      <div class="promo">
+        <h3>Ready-to-use assets</h3>
+        <p>Graphics, video, and photos are provided for you to post.</p>
+      </div>
+      <div class="promo">
+        <h3>Months of distribution</h3>
+        <p>Extended distribution after the event via LinkedIn, YouTube, and audio platforms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="todo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Before ACS26</h2>
+      <p class="sec-note">Four things. That's the whole list.</p>
+    </div>
+    <div class="todo">
+      <div class="todo-item reveal">
+        <div>
+          <h3>Complete your Speaker Information Form</h3>
+          <p>Your bio, headshot, and session details — this feeds the site, the program, and your promotional assets. <a href="https://docs.google.com/forms/d/e/1FAIpQLScrdMpHtX15pJFrprIrzcTBpqz5ErVeIUAtmkUXlha8szbBRQ/viewform?usp=header" target="_blank" rel="noopener">Complete the form →</a></p>
+        </div>
+      </div>
+      <div class="todo-item reveal">
+        <div>
+          <h3>Register your complimentary speaker ticket</h3>
+          <p>Register at <a href="https://luma.com/acs26" target="_blank" rel="noopener">luma.com/acs26</a></p>
+        </div>
+      </div>
+      <div class="todo-item reveal">
+        <div>
+          <h3>Register your guests — 50% off</h3>
+          <p>Use your guest code <span class="code-chip">M8Y86R</span> or share the direct link: <a href="https://luma.com/acs26?coupon=M8Y86R" target="_blank" rel="noopener">luma.com/acs26?coupon=M8Y86R</a></p>
+        </div>
+      </div>
+      <div class="todo-item reveal">
+        <div>
+          <h3>Promote your session</h3>
+          <p>Use your <a href="https://drive.google.com/drive/folders/1VGXoyXEm28vnZVT5vb95CLTWpY-o65hM?usp=sharing" target="_blank" rel="noopener">speaker cards</a> to let people know you're speaking — and tag <strong style="color:var(--white)">#ACS26</strong> so we can amplify it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>On-Site Contact<br>&amp; Questions</h2>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact">
+        <div class="name">Lee Odess</div>
+        <div class="role">ACS Host</div>
+        <a href="tel:+12029998180"><span>Phone / WhatsApp</span>+1 202 999 8180</a>
+        <a href="mailto:lee@leeodess.com"><span>Email</span>lee@leeodess.com</a>
+      </div>
+      <div class="contact">
+        <div class="name">Hilary Gallagher</div>
+        <div class="role">Speaker &amp; Event Coordination</div>
+        <a href="tel:+12488913284"><span>Phone / WhatsApp</span>+1 248 891 3284</a>
+        <a href="mailto:hilary@leeodess.com"><span>Email</span>hilary@leeodess.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>ACS26 · Access Control Summit · Hamilton, New Zealand · with city-host Gallagher Security</div>
+    <div class="tag">#ACS26</div>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
