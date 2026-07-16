@@ -313,7 +313,7 @@ h2{
 .contact{
   background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:32px;
 }
-.contact .name{font-size:22px;font-weight:900;letter-spacing:-.01em;margin-bottom:4px}
+.contact .name{font-size:22px;font-weight:900;letter-spacing:-.01em;margin-bottom:20px}
 .contact .role{font-size:17px;color:var(--grey);margin-bottom:20px}
 .contact a{
   display:block;font-size:17px;font-weight:500;padding:10px 0;
@@ -339,6 +339,32 @@ footer{padding:56px 0}
 }
 
 /* ---------- RESPONSIVE ---------- */
+/* ---------- MOBILE NAV ---------- */
+.nav-burger{
+  display:none;
+  background:none;border:1px solid var(--line);border-radius:10px;
+  width:44px;height:44px;cursor:pointer;
+  align-items:center;justify-content:center;flex-direction:column;gap:5px;
+}
+.nav-burger span{display:block;width:18px;height:2px;background:var(--white);transition:transform .2s ease,opacity .2s ease}
+.nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-burger:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.mobile-menu{
+  display:none;
+  border-top:1px solid var(--line);
+  background:rgba(10,10,10,.97);
+}
+.mobile-menu.open{display:block}
+.mobile-menu a{
+  display:block;padding:16px 24px;
+  font-size:17px;font-weight:700;color:var(--white);
+  border-bottom:1px solid var(--line);
+}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:active{color:var(--green)}
+
 @media (max-width:960px){
   .grid-3{grid-template-columns:1fr}
   .grid-2,.contact-grid,.promo-list{grid-template-columns:1fr}
@@ -350,15 +376,24 @@ footer{padding:56px 0}
   .trav-row{padding:34px 16px;margin:0 -16px}
   .nav-tag{display:none}
 }
+@media (max-width:860px){
+  .nav-right a:not(.nav-cta){display:none}
+  .nav-burger{display:flex}
+  .nav-right{gap:12px}
+}
 @media (max-width:600px){
   .wrap{padding:0 20px}
   .nav-inner{padding:0 20px}
-  .nav-right a:not(.nav-cta){display:none}
   section{padding:64px 0}
   .hero{padding:80px 0 64px}
+  h1{font-size:clamp(38px,11.5vw,64px)}
+  .hero-sub{font-size:18px}
+  .nav-cta{padding:10px 16px !important;font-size:13px}
   .todo-item{grid-template-columns:56px 1fr;gap:16px}
   .todo-item::before{font-size:28px}
   .moment-stats{gap:28px}
+  .prep li{flex-wrap:wrap}
+  .prep li .fmt{min-width:100%}
 }
 </style>
 </head>
@@ -378,7 +413,18 @@ footer{padding:56px 0}
       <a href="#promotion">Promotion</a>
       <a href="#contact">Contact</a>
       <a class="nav-cta" href="#todo">Before ACS26</a>
+      <button class="nav-burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#format">Session Types</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#travel">Getting There</a>
+    <a href="#promotion">Promotion</a>
+    <a href="#contact">Contact</a>
+    <a href="#todo" style="color:var(--green)">Before ACS26 →</a>
   </div>
 </nav>
 
@@ -642,13 +688,11 @@ footer{padding:56px 0}
     <div class="contact-grid reveal">
       <div class="contact">
         <div class="name">Lee Odess</div>
-        <div class="role">ACS Host</div>
         <a href="tel:+12029998180"><span>Phone / WhatsApp</span>+1 202 999 8180</a>
         <a href="mailto:lee@leeodess.com"><span>Email</span>lee@leeodess.com</a>
       </div>
       <div class="contact">
         <div class="name">Hilary Gallagher</div>
-        <div class="role">Speaker &amp; Event Coordination</div>
         <a href="tel:+12488913284"><span>Phone / WhatsApp</span>+1 248 891 3284</a>
         <a href="mailto:hilary@leeodess.com"><span>Email</span>hilary@leeodess.com</a>
       </div>
@@ -664,6 +708,18 @@ footer{padding:56px 0}
 </footer>
 
 <script>
+const burger = document.querySelector('.nav-burger');
+const menu = document.getElementById('mobileMenu');
+burger.addEventListener('click', ()=>{
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+  burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+  menu.classList.remove('open');
+  burger.setAttribute('aria-expanded','false');
+  burger.setAttribute('aria-label','Open menu');
+}));
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
 },{threshold:.12});
